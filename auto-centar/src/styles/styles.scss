@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #222;
+}
+
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background: #0a1a2a;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 270px;
+
+        li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.2s;
+
+            &:hover {
+                color: #ffb703;
+            }
+        }
+    }
+}
+
+.footer {
+    background: #0a1a2a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+
+    .footer-links {
+        
+        .space {
+            margin-right: 30px;
+        }
+
+        #car-auto {
+            margin-right: 80px;
+        }
+    }
+}
+
+.page-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.locations-container {
+    background-image: url(https://i.ibb.co/Z6HPGPj0/road-without-car.jpg);
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        margin-left: 90px;
+    }
+
+    .locations-list {
+        margin-left: 90px;
+        margin-bottom: 160px;
+    }
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.2s;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .card-price {
+        color: #0066cc;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .card-desc {
+        font-size: 14px;
+        color: #555;
+    }
+}
+
+.btn {
+    background: #0066cc;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s;
+
+    &:hover {
+        background: #004b99;
+    }
+}
